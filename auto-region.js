@@ -54,7 +54,7 @@
 
       var citiesList = cities[pid];
 
-      html = '';
+      html = '<option value="">请选择所在城市</option>';
       for (var i=0; i<citiesList.length; i++) {
 
         if (defCity && defCity == citiesList[i][0]) {
@@ -82,7 +82,7 @@
 
       var regionList = regions[cid];
       
-      var html = '';
+      var html = '<option value="">请选择所在区县</option>';
       for(var i = 0; i < regionList.length; i++){
         if (defRegion && defRegion == regionList[i][0]) {
           html += '<option value="' + regionList[i][0] + '" selected>' + regionList[i][1] + '</option>';

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <select name="province" class="province"></select>
+    <select name="city" class="city"></select>
+    <select name="region" class="region"></select>
+    
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="region-data.js"></script>
+    <script type="text/javascript" src="auto-region.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        regions.init();
+      });
+    </script>
+  </body>
+</html>
